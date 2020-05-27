@@ -280,6 +280,10 @@
             logiList.push(creatLogiData("12-2", 240, 0, 0, 80, "—", "—", 1.5));
             logiList.push(creatLogiData("12-3", 88.9, 133.3, 133.3, 0, "快速建造", "—", 9));
             logiList.push(creatLogiData("12-4", 150, 0, 150, 0, "人形契约", "—", 12));
+            logiList.push(creatLogiData("13-1", 0, 0, 400, 0, "快速建造", "—", 3));
+            logiList.push(creatLogiData("13-2", 133.3, 133.3, 133.3, 50, "—", "—", 6));
+            logiList.push(creatLogiData("13-3", 0, 166.7, 0, 50, "装备契约", "—", 24));
+            logiList.push(creatLogiData("13-4", 0, 0, 0, 166.7, "人形契约", "—", 6));
             logiList.sort(function (a, b) {
                 var weight1 = a.mpw * parseInt(Mw.value) + a.amm * parseInt(Aw.value) + a.rat * parseInt(Rw.value) + a.prt * parseInt(Pw.value);
                 var weight2 = b.mpw * parseInt(Mw.value) + b.amm * parseInt(Aw.value) + b.rat * parseInt(Rw.value) + b.prt * parseInt(Pw.value);
@@ -309,7 +313,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><span style="color:#FF0066">少女前线工具</span> by 命运の乐章 (GF tools)</a>
+                <a class="navbar-brand" href="index.html"><span style="color:#FF0066">少女前线工具</span> by 命运の乐章 (GF
+                    tools)</a>
             </div>
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -330,7 +335,8 @@
                         <li><a href="GFT_LevelCal.html"><i class="fa fa-upload fa-fw"></i> 练级计算器</a></li>
                         <li><a href="GFT_IOPSimulate.html"><i class="fa fa-gears fa-fw"></i> 建造模拟器</a></li>
                         <li><a href="GFT_ChipCal.html"><i class="fa fa-delicious fa-fw"></i> 芯片计算器</a></li>
-                        <li><a href="GFT_Echelon.html"><i class="glyphicon glyphicon-screenshot"></i> &nbsp阵形模拟器</a></li>
+                        <li><a href="GFT_Echelon.html"><i class="glyphicon glyphicon-screenshot"></i> &nbsp阵形模拟器</a>
+                        </li>
                         <li><a href="GFT_Stat.html"><i class="glyphicon glyphicon-stats"></i> &nbsp掉落统计</a></li>
                         <li><a href="GFT_Class.html"><i class="fa fa-search"></i> &nbsp格里芬人事部</a></li>
                     </ul>
@@ -344,7 +350,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="tooltip-demo">
-                            <h1 class="page-header">后勤排序器 <button type="button" data-toggle="tooltip" data-placement="bottom" title="English language" class="btn btn-outline btn-default" onclick="Language('English')">English</button> <button type="button" data-toggle="tooltip" data-placement="bottom" title="各资源获取速率乘其权重求和排序 所缺的资源可将权重调大" class="btn btn-outline btn-default">?</button></h1>
+                            <h1 class="page-header">后勤排序器 <button type="button" data-toggle="tooltip"
+                                    data-placement="bottom" title="English language" class="btn btn-outline btn-default"
+                                    onclick="Language('English')">English</button> <button type="button"
+                                    data-toggle="tooltip" data-placement="bottom" title="各资源获取速率乘其权重求和排序 所缺的资源可将权重调大"
+                                    class="btn btn-outline btn-default">?</button></h1>
                         </div>
                     </div>
                 </div>
@@ -370,18 +380,26 @@
                                 <div class="tab-content">
                                     <!--RATIO-->
                                     <div class="tab-pane fade in active" id="Ratio">
-                                        <div class="col-lg-6" style="background:url(../img/Logi-token.png) no-repeat right 15px top 15px">
+                                        <div class="col-lg-6"
+                                            style="background:url(../img/Logi-token.png) no-repeat right 15px top 15px">
                                             <h4>常用</h4>
                                             <p>
-                                                <button type="button" class="btn btn-outline btn-primary" onclick="setWeight(2)">零件x3</button>
-                                                <button type="button" class="btn btn-outline btn-danger" onclick="setWeight(1)">等比</button>
-                                                <button type="button" class="btn btn-default" onclick="setWeight(3)">赌枪</button>
+                                                <button type="button" class="btn btn-outline btn-primary"
+                                                    onclick="setWeight(2)">零件x3</button>
+                                                <button type="button" class="btn btn-outline btn-danger"
+                                                    onclick="setWeight(1)">等比</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setWeight(3)">赌枪</button>
                                             </p>
                                             <p>
-                                                <button type="button" class="btn btn-default" onclick="setWeight(4)">人力</button>
-                                                <button type="button" class="btn btn-default" onclick="setWeight(5)">弹药</button>
-                                                <button type="button" class="btn btn-default" onclick="setWeight(6)">口粮</button>
-                                                <button type="button" class="btn btn-default" onclick="setWeight(7)">零件</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setWeight(4)">人力</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setWeight(5)">弹药</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setWeight(6)">口粮</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setWeight(7)">零件</button>
                                             </p>
                                             <h4>包含道具</h4>
                                             <p>
@@ -409,19 +427,23 @@
                                             <h4>权重</h4>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">人力权重</span>
-                                                <input type="text" class="form-control" placeholder="输入整数" id="Mw" value=1>
+                                                <input type="text" class="form-control" placeholder="输入整数" id="Mw"
+                                                    value=1>
                                             </div>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">弹药权重</span>
-                                                <input type="text" class="form-control" placeholder="输入整数" id="Aw" value=1>
+                                                <input type="text" class="form-control" placeholder="输入整数" id="Aw"
+                                                    value=1>
                                             </div>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">口粮权重</span>
-                                                <input type="text" class="form-control" placeholder="输入整数" id="Rw" value=1>
+                                                <input type="text" class="form-control" placeholder="输入整数" id="Rw"
+                                                    value=1>
                                             </div>
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">零件权重</span>
-                                                <input type="text" class="form-control" placeholder="输入整数" id="Pw" value=3>
+                                                <input type="text" class="form-control" placeholder="输入整数" id="Pw"
+                                                    value=3>
                                             </div>
                                         </div>
                                     </div>
@@ -430,24 +452,31 @@
                                         <div class="col-lg-12">
                                             <h4>时间区间</h4>
                                             <p>
-                                                <button type="button" class="btn btn-default" onclick="setTime(5)">全部</button>
-                                                <button type="button" class="btn btn-outline btn-primary" onclick="setTime(1)">6~12h</button>
-                                                <button type="button" class="btn btn-default" onclick="setTime(2)">4~6h</button>
-                                                <button type="button" class="btn btn-default" onclick="setTime(3)">1~3h</button>
-                                                <button type="button" class="btn btn-outline btn-danger" onclick="setTime(4)">0~1.7h</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setTime(5)">全部</button>
+                                                <button type="button" class="btn btn-outline btn-primary"
+                                                    onclick="setTime(1)">6~12h</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setTime(2)">4~6h</button>
+                                                <button type="button" class="btn btn-default"
+                                                    onclick="setTime(3)">1~3h</button>
+                                                <button type="button" class="btn btn-outline btn-danger"
+                                                    onclick="setTime(4)">0~1.7h</button>
                                             </p>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">最短</span>
-                                                <input type="text" class="form-control" value="0" placeholder="输入数字" id="Tr">
+                                                <input type="text" class="form-control" value="0" placeholder="输入数字"
+                                                    id="Tr">
                                                 <span class="input-group-addon">小时</span>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group input-group">
                                                 <span class="input-group-addon">最长</span>
-                                                <input type="text" class="form-control" value="24" placeholder="输入数字" id="Tm">
+                                                <input type="text" class="form-control" value="24" placeholder="输入数字"
+                                                    id="Tm">
                                                 <span class="input-group-addon">小时</span>
                                             </div>
                                         </div>
@@ -467,13 +496,15 @@
                                                     <option value=9>第九战役</option>
                                                     <option value=10>第十战役</option>
                                                     <option value=11>第十一战役</option>
-                                                    <option value=12 selected>第十二战役</option>
+                                                    <option value=12>第十二战役</option>
+                                                    <option value=13 selected>第十三战役</option>
                                                 </select>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <p><button type="button" class="btn btn-info" onclick="getRanking()">按条件排序</button></p>
+                                        <p><button type="button" class="btn btn-info"
+                                                onclick="getRanking()">按条件排序</button></p>
                                     </div>
                                 </div>
 
